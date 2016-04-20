@@ -11,6 +11,8 @@ case $action in
 
     case $chapter in
     2.[1-5])
+      # Make sure we're in the lab directory
+      cd ${lab_dir}
       echo "Setting code to $chapter"
 
       # Copy the code files from the section, and overwrite any existing files
